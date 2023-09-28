@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Poppins&family=Wavefont:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaQuery.css">
+
+</head>
+
+<body>
+    <div class="glass-container">
+        <div class="header">
+            <div class="searchBox">
+                <input type="text" id="city" class="inputBox searchBar">
+                <select id="temperatureUnit" class="inputBox dropdown">
+                    <option value="Celsius">Celsius (°C)</option>
+                    <option value="Fahrenheit">Fahrenheit (°F)</option>
+                </select>
+                <button id="GetWeatherInfo" class="searchButton ">search</button>
+            </div>
+            <p class="date" id="formattedDate"></p>
+        </div>
+        <hr>
+
+
+
+
+        <div class="card mb-3 cardBackground" style="max-width: 880px;">
+            <div class="row g-0">
+                <div class="col-md-5 col-lg-6 tempBox">
+                    <div class="row g-0 tempAndCity text-white">
+                        <h1 class="temp" id="cityTemp"></h1>
+                        <h3 class="city" id="cityName">temperature & City</h3>
+                        <hr class="line">
+                    </div>
+                    <div class="row g-0 sunriseSunset">
+                        <p class="text-white paddingForRiseSet" id="sunrise"></p>
+                        <p class="text-white paddingForRiseSet" id="sunset"></p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-7 col-lg-6">
+                    <div class="card-body  ">
+                        <div class="card cardBackground  mb-3" style="max-width: 25rem;">
+                            <div class="card-body detailsBox">
+                                <h5 class="card-title"><i class="fa-solid fa-smog"></i></h5>
+                                <p class="card-text detailsData" id="weathercondition">weather Condition</p>
+                            </div>
+                            <div class="card-body detailsBox">
+                                <h5 class="card-title"><i class="fa-solid fa-droplet"></i></h5>
+                                <p class="card-text detailsData" id="humidity">Humidity</p>
+                            </div>
+                            <div class="card-body detailsBox">
+                                <h5 class="card-title"><i class="fa-solid fa-asterisk"></i></h5>
+                                <p class="card-text detailsData" id="description">Description</p>
+                            </div>
+                            <div class="card-body detailsBox">
+                                <h5 class="card-title "> <i class="fa-solid fa-wind"></i> </h5>
+                                <p class="windSpeed detailsData" id="windSpeed">Wind Speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

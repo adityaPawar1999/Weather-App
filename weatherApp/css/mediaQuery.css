@@ -1,0 +1,94 @@
+@media screen and (max-width: 992px) {
+    .glass-container {
+        width: 90%;
+    }
+    .temp{
+    font-size: 5rem;
+    }
+    .city{
+        text-transform: capitalize;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .line{
+        height: 1px;
+        width: 100%;
+        background-color: #fff;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .glass-container {
+        width: 80%;
+        margin: 40px;
+    }
+    .searchBox {
+        width: 200%;
+        margin-left: 70px;
+    }
+    .searchBar {
+        margin-top: 10px;
+    }
+    .searchButton {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .dropdown {
+        margin-top: 10px;
+    }
+    .temp{
+    font-size: 3rem;
+     }
+    .city{
+        text-transform: capitalize;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+    }
+    .line{
+        margin-right: 100px;
+        height: 1px;
+        width: 80%;
+        background-color: #fff;
+    }
+    .date {
+        visibility: hidden;
+    }
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    body {
+        background-size: auto;
+    }
+    .glass-container {
+        width: 100%;
+        padding: 10px;
+        min-height: auto;
+    }
+    .searchBox {
+        flex-direction: column;
+    }
+    .searchButton {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .tempAndCity {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 50px;
+    }
+    .temp {
+        padding-top: 0;
+        font-size: 2rem;
+    }
+    .city {
+        padding-top: 10px;
+        font-size: 30px;
+    }
+}
